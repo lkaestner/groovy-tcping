@@ -1,0 +1,15 @@
+Description,Hostname,Port,IP-Address,Result-Overall,Result-DNS,Result-Ping,Result-Socket
+Google Search,www.google.com,80,172.217.22.68,Socket-OK,success,success,success
+Google Search,www.google.com,443,172.217.22.68,Socket-OK,success,success,success
+IpLeak,ipleak.net,443,95.85.16.212,Socket-OK,success,success,success
+Cloudflare IPv4 HTTPS/DoH,1.1.1.1,443,1.1.1.1,Socket-OK,skipped,success,success
+Cloudflare IPv6 HTTPS/DoH,2606:4700:4700::1111,443,2606:4700:4700:0:0:0:0:1111,Socket-OK,skipped,success,success
+Localhost SSH,localhost,22,127.0.0.1,Ping-Only,success,success,failed
+Localhost RDP,localhost,3389,127.0.0.1,Socket-OK,success,success,success
+Example Discard,example.com,9,93.184.216.34,Ping-Only,success,success,failed
+USA Gov Discard,usa.gov,9,54.85.132.205,DNS-only,success,failed,failed
+Unreachable IPv4,192.0.2.0,80,192.0.2.0,No-Conn,skipped,failed,failed
+Unreachable IPv6,2001:db8::,80,2001:db8:0:0:0:0:0:0,No-Conn,skipped,failed,failed
+Invalid Hostname (DNS),test.invalid.,80,?,No-DNS,failed,not-tested,not-tested
+Malformed IPv4,200.0.0.0,22,200.0.0.0,No-Conn,skipped,failed,failed
+Malformed IPv6,2001:4860:4860::888g,443,?,No-DNS,failed,not-tested,not-tested

@@ -1,0 +1,22 @@
+# the first row is the headers row
+Description,Hostname,Port
+
+Google Search,www.google.com,80+443
+IpLeak,ipleak.net,443
+
+Cloudflare IPv4 HTTPS/DoH,1.1.1.1,443
+Cloudflare IPv6 HTTPS/DoH,2606:4700:4700::1111,443
+
+Localhost SSH,localhost,22
+Localhost RDP,localhost,3389
+
+# some negative test-cases below
+Example Discard,example.com,9
+USA Gov Discard,usa.gov,9
+
+Unreachable IPv4,192.0.2.0,80
+Unreachable IPv6,2001:db8::,80
+
+Invalid Hostname (DNS),test.invalid.,80
+Malformed IPv4,200.0.0.0,22
+Malformed IPv6,2001:4860:4860::888g,443
