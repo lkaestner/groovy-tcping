@@ -34,7 +34,7 @@ Sample output-CSV:
 GroovyCover uses [Groovy](http://groovy-lang.org).
 
 It doesn't matter how you install it, but some suggestions are:
-* Windows: Get [Chocolatey](https://chocolatey.org) and run "choco install groovy".
+* Windows: Get [Scoop](https://scoop.sh) and run "scoop install groovy" - or get [Chocolatey](https://chocolatey.org) and run "choco install groovy". 
 * Ubuntu:  Run "sudo apt-get install groovy".
 
 ## Authors & Affiliations
